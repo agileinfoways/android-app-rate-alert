@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-        compile 'com.github.agileinfoways:android-app-rate-alert:1.0'
+        compile 'com.github.agileinfoways:android-app-rate-alert:1.1'
 }
 ```
 
@@ -24,7 +24,7 @@ dependencies {
 <dependency>
     <groupId>com.github.agileinfoways</groupId>
     <artifactId>android-app-rate-alert</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
 </dependency>
 ```
 
