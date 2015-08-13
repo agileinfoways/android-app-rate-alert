@@ -45,7 +45,7 @@ public class AppRateAlert {
      * DONT_SHOW_AGAIN,
      * DISMISS
      */
-    static class Action {
+    public static class Action {
         public static final int RATE_APP = 0;
         public static final int SEND_FEEDBACK = 1;
         public static final int DONT_SHOW_AGAIN = 2;
@@ -99,8 +99,9 @@ public class AppRateAlert {
             return;
         }
         long currentTime = System.currentTimeMillis();
-        if (currentTime >= (preferences.getLong(KEY_LAST_ALERT_TIME, currentTime) + TimeUnit.DAYS.toMillis(alertInterval))) {
-            editor.putLong(KEY_LAST_ALERT_TIME, System.currentTimeMillis()).apply();
+        if (currentTime >= (preferences.getLong(KEY_LAST_ALERT_TIME, 0) + TimeUnit.DAYS.toMillis(alertInterval))) {
+            long nextAlertTime = currentTime + TimeUnit.DAYS.toMillis(alertInterval);
+            editor.putLong(KEY_LAST_ALERT_TIME, nextAlertTime).apply();
             AlertDialog alertDialog = builder.create();
             alertDialog.show();
         }
