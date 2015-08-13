@@ -13,11 +13,13 @@ dependencies {
 }
 
 ## Maven
+```xml
 <repository>
     <id>jitpack.io</id>
     <url>https://jitpack.io</url>
 </repository>
 
+```xml
 <dependency>
     <groupId>com.github.agileinfoways</groupId>
     <artifactId>android-app-rate-alert</artifactId>
