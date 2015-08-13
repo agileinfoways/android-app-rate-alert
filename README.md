@@ -1,6 +1,7 @@
 # Android Application Rating Alert
 
 ###### an library to show app rating alert with customized alert button label, action and alert interval.
+![Alt text](https://github.com/agileinfoways/android-app-rate-alert/blob/master/screen_shot.png "Screen shot")
 
 ## Gradle
 ```xml
