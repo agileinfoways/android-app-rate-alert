@@ -3,6 +3,7 @@
 ###### an library to show app rating alert with customized alert button label, action and alert interval.
 
 ## Gradle
+```xml
 repositories {
     // ...
     maven { url "https://jitpack.io" }
@@ -11,6 +12,7 @@ repositories {
 dependencies {
         compile 'com.github.agileinfoways:android-app-rate-alert:1.0'
 }
+```
 
 ## Maven
 ```xml
