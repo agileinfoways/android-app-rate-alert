@@ -41,6 +41,7 @@ dependencies {
 ```
 
 ## Licence
+```
 Copyright 2015 Agileinfoways Pvt. Ltd.
 Copyright 2015 The Android Open Source Project for AppRateAlert
 
